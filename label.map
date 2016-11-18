@@ -1,0 +1,5 @@
+Car 0 [64,0,128]
+Pedestrian 1 [64,64,0]
+Bicyclist 2 [0,129,192]
+lights 3 [64,64,128]
+other 4 [0,0,0]
