@@ -9,7 +9,7 @@ def draw_mboxs(boxfname,pic_dir):
     for line in box_file.xreadlines():
         lline = line.strip().split(" ")
         
-        if float(lline[1]) < 0.28:
+        if float(lline[1]) < 0.99:
             continue
 
         if lline[0] in boxmap:
