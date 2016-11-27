@@ -9,7 +9,7 @@ def draw_mboxs(boxfname,pic_dir):
     for line in box_file.xreadlines():
         lline = line.strip().split(" ")
         
-        if float(lline[1]) < 0.99:
+        if float(lline[1]) < 0.999:
             continue
 
         if lline[0] in boxmap:
@@ -25,7 +25,7 @@ def draw_mboxs(boxfname,pic_dir):
         for rect in boxmap[fname]:
             cv2.rectangle(img,(int(rect[0]),int(rect[1])),(int(rect[2]),int(rect[3])),(255,0,0),1)
             print rect
-        cv2.imshow(fname,img)
+        cv2.imwrite("F:\\caffe\\detect_result\\" + fname + ".jpg",img)
     
     cv2.waitKey(-1)
         

@@ -13,7 +13,7 @@ def plot_loss(logname):
         lossString = " loss "
         lossPos = line.find(lossString)
         if lossPos >= 0 and IterPos >= 0 :
-            print line[lossPos + len(lossString) + 2:]
+            #print line[lossPos + len(lossString) + 2:]
             l.append(float(line[lossPos + len(lossString) + 2:]))
     for i in xrange(100,len(l)):
         t = 0
