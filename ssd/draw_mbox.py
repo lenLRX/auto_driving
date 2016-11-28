@@ -26,6 +26,7 @@ def draw_mboxs(boxfname,pic_dir):
             cv2.rectangle(img,(int(rect[0]),int(rect[1])),(int(rect[2]),int(rect[3])),(255,0,0),1)
             print rect
         cv2.imwrite("F:\\caffe\\detect_result\\" + fname + ".jpg",img)
+        #cv2.imshow(fname,img)
     
     cv2.waitKey(-1)
         
