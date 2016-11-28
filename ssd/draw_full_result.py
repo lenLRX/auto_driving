@@ -14,13 +14,13 @@ def draw_mboxs(boxfname,pic_dir):
 
         fname = lline[0].split("/")[-1].split(".")[0]
         
-        if float(lline[2]) < 0.9:
+        if float(lline[2]) < 0.5:
             continue
 
         box_list = lline[3:]
         box_list.append(lline[1])
 
-        if lline[0] in boxmap:
+        if fname in boxmap:
             boxmap[fname].append(box_list)
         else:
             boxmap[fname] = [box_list]
